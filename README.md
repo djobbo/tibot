@@ -1,2 +1,0 @@
-# tibot
-Created with CodeSandbox
