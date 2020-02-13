@@ -1,35 +1,18 @@
 {
-<<<<<<< HEAD
 	"name": "node-http-server",
 	"version": "1.0.0",
 	"description": "Node.js example server starter project",
-	"main": "src/main.js",
+	"main": "src/index.js",
 	"scripts": {
-		"start": "nodemon src/main.js",
-		"dev": "dotenv nodemon src/main.js"
+		"start": "node src/index.js",
+		"dev": "dotenv nodemon src/index.js"
 	},
 	"dependencies": {
-		"discord.js": "^11.5.1"
+		"discord.js": "11.5.1",
+		"firebase": "^7.8.1"
 	},
 	"devDependencies": {
 		"nodemon": "1.18.4"
 	},
 	"keywords": []
-=======
-  "name": "node-http-server",
-  "version": "1.0.0",
-  "description": "Node.js example server starter project",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "nodemon src/index.js"
-  },
-  "dependencies": {
-    "discord.js": "11.5.1",
-    "firebase": "^7.8.1"
-  },
-  "devDependencies": {
-    "nodemon": "1.18.4"
-  },
-  "keywords": []
->>>>>>> ef8892d6078288077e7c7fb5ae490233fdf38d77
 }
