@@ -96,7 +96,11 @@ client.on('message', async msg => {
 			msg.channel.send(helpEmbed);
 			break;
 		case 'tibg':
-			if (msg.author.id !== process.env.BOSS_ID) return;
+			if (
+				msg.author.id !== process.env.BOSS_ID &&
+				msg.channel.id !== process.env.NOMIC_CHANNEL_ID
+			)
+				return;
 			const mention = msg.mentions.users.first();
 			msg.delete();
 			if (!mention) return;
